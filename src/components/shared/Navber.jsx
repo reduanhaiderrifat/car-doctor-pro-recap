@@ -102,6 +102,5 @@ const links = [
   { title: "About", url: "/about" },
   { title: "My Bookings", url: "/my-bookings" },
   { title: "Contact", url: "/contact" },
-  { title: "Services", url: "/services" },
 ];
 export default Navber;
