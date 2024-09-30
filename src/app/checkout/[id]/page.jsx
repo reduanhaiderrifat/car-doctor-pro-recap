@@ -42,7 +42,7 @@ const CheckoutPage = ({ params }) => {
     };
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_URL}/checkout/api/booking`,
+        `$https://car-doctor-pro-recap-hbdo.vercel.app/checkout/api/booking`,
         {
           method: "POST",
           headers: {

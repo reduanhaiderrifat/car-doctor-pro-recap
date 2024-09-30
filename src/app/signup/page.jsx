@@ -23,13 +23,16 @@ const Signup = () => {
     };
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/signup/api`, {
-        method: "POST",
-        body: JSON.stringify(newuser),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await fetch(
+        `https://car-doctor-pro-recap-hbdo.vercel.app/signup/api`,
+        {
+          method: "POST",
+          body: JSON.stringify(newuser),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       console.log(res);
       // Check for HTTP errors
       if (!res.ok) {

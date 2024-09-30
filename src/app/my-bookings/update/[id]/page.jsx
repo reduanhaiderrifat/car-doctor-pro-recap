@@ -10,7 +10,7 @@ const UpdateBooking = ({ params }) => {
   const [loading, setLoading] = useState(false);
   const loadedData = async () => {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_URL}/my-bookings/bookings/${params.id}`
+      `https://car-doctor-pro-recap-hbdo.vercel.app/my-bookings/bookings/${params.id}`
     );
     const data = await response.json();
     setBooking(data);
@@ -30,7 +30,7 @@ const UpdateBooking = ({ params }) => {
       address,
     };
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_URL}/my-bookings/bookings/${params.id}`,
+      `https://car-doctor-pro-recap-hbdo.vercel.app/my-bookings/bookings/${params.id}`,
       {
         method: "PATCH",
         headers: {

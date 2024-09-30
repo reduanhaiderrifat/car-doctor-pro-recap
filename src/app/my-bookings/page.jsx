@@ -23,7 +23,7 @@ const BookingsPage = () => {
     if (storeEmail) {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_URL}/my-bookings/api/${storeEmail}`
+          `https://car-doctor-pro-recap-hbdo.vercel.app/my-bookings/api/${storeEmail}`
         );
         const data = await res.json();
         setBookings(data?.bookings || []);
@@ -43,7 +43,7 @@ const BookingsPage = () => {
   const handleDelete = async (id) => {
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_URL}/my-bookings/bookings/${id}`,
+        `$https://car-doctor-pro-recap-hbdo.vercel.app/my-bookings/bookings/${id}`,
         {
           method: "DELETE",
         }
