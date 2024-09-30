@@ -6,7 +6,7 @@ const Services = () => {
   const [services, setServices] = useState();
   const loadedData = async () => {
     const data = await fetch(
-      `${process.env.NEXT_PUBLIC_URL}/services/api/get-all`
+      `https://car-doctor-pro-recap-hbdo.vercel.app/services/api/get-all`
     );
     const { services } = await data.json();
     setServices(services);
@@ -14,7 +14,7 @@ const Services = () => {
   useEffect(() => {
     loadedData();
   }, []);
-  console.log(services);
+  console.log(services); //sdjfsdjurweurwer
   return (
     <div>
       <div className="text-center my-24">
