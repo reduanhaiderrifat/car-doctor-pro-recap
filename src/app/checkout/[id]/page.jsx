@@ -11,7 +11,7 @@ const CheckoutPage = ({ params }) => {
   const { title, image, price, service_id } = service || {};
   const loadedDaata = async () => {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_URL}/services/api/${params.id}`
+      `https://car-doctor-pro-recap-hbdo.vercel.app/services/api/${params.id}`
     );
     const data = await response.json();
     setService(data);
