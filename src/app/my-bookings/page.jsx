@@ -43,7 +43,7 @@ const BookingsPage = () => {
   const handleDelete = async (id) => {
     try {
       const res = await fetch(
-        `$https://car-doctor-pro-recap-hbdo.vercel.app/my-bookings/bookings/${id}`,
+        `https://car-doctor-pro-recap-hbdo.vercel.app/my-bookings/bookings/${id}`,
         {
           method: "DELETE",
         }
